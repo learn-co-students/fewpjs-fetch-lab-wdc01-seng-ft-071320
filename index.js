@@ -8,7 +8,7 @@ function fetchBooks() {
     })
     .then(function(json){
      // return console.log(json)
-      renderBooks(json)
+      return renderBooks(json)
     })
   );
 
