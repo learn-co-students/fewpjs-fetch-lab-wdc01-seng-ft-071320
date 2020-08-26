@@ -1,7 +1,7 @@
 function fetchBooks() {
   return fetch('https://anapioficeandfire.com/api/books')
     .then(resp => resp.json())
-    .then(json => renderBooks(json));
+    .then(json => renderBooks(json)); // the converted json is passed as an argument to the second function (renderBooks)
 }
 
 var books = fetchBooks();
